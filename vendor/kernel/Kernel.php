@@ -1,24 +1,26 @@
 <?php
 
+declare(strict_types=1);
 
-namespace Vendor\kernel;
+namespace Vendor\kernel {
 
-use Vendor\db\Db;
+    use Vendor\db\Db;
 
-/**
- * Ядро системы
- *
- * @package Vendor\kernel
- */
-class Kernel
-{
     /**
-     * @var Db объект для работы с базой данных
+     * Ядро системы
+     *
+     * @package Vendor\kernel
      */
-    public $db;
-
-    public function __construct()
+    class Kernel
     {
-        $this->db = new Db();
+        /**
+         * @var Db объект для работы с базой данных
+         */
+        public $db;
+
+        public function __construct()
+        {
+            $this->db = new Db();
+        }
     }
 }
