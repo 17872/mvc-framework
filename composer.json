@@ -1,0 +1,25 @@
+{
+    "name": "yury_pupynin/mvc-framework",
+    "description": "mvc-framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yury Pupynin",
+            "email": "pvida.mailbox@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\": "vendor/",
+            "App\\": "apps/"
+        },
+        "files": [
+            "config/settings.php"
+        ]
+    }
+}
