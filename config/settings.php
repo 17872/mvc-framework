@@ -7,7 +7,13 @@ define(
     serialize(
         array_merge(
             [
-
+                'db' => (object)[
+                    'host' => '',
+                    'port' => '',
+                    'dbname' => '',
+                    'user' => '',
+                    'pass' => ''
+                ]
             ],
             unserialize(SETTINGS_LOCAL)
         )

@@ -4,24 +4,22 @@ declare(strict_types=1);
 
 namespace Vendor\db {
 
-    use Vendor\kernel\Kernel;
-
     /**
-     * Класс для работы с базой данных
+     * Database class
      *
      * @package vendor\db
      */
-    class Db extends Kernel
+    class Db
     {
         /**
-         * @var object настроки для подключения к базе данных
+         * @var object settings for connecting to the database
          */
         private $settings;
 
         /**
-         * @var \PDO соединение с базой, объект PDO
+         * @var \PDO base connection, PDO object
          */
-        protected $conn;
+        public $conn;
 
         public function __construct()
         {
